@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Practice_Linq
+﻿namespace Practice_Linq
 {
     public class FootballGame
     {
@@ -17,5 +11,9 @@ namespace Practice_Linq
         public string City { get; set; }
         public string Country { get; set; }
         public bool Neutral { get; set; }
+        public override string ToString()
+        {
+            return $"{this.Date:dd.MM.yyyy} {this.Home_team} - {this.Away_team}, Score: {this.Home_score} - {this.Away_score}, Country: {this.Country}";
+        }
     }
 }
